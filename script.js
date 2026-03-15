@@ -1,3 +1,4 @@
+// task 1
 function weather(month, day) {
 
     if ((month == 12 && day >= 15) || month <= 2 || (month == 3 && day <= 25)) {
@@ -14,4 +15,10 @@ function weather(month, day) {
 
     return "Unknown"; }
 
-    
+// task 2
+function isPerfectSquare(arg) {
+    let root = Math.sqrt(arg)
+        if (Number.isInteger(root)) {
+            return "Integer " + arg + " is Perfect Square"
+        } else {
+            return "Integer " + arg + " is NOT Perfect Square" } }
