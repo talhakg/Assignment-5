@@ -1,7 +1,8 @@
 // task 1
 function weather(month, day) {
 
-    if ((month == 12 && day >= 15) || month <= 2 || (month == 3 && day <= 25)) {
+    if ((month == 12 && day >= 15) || month <= 2 || 
+        (month == 3 && day <= 25)) {
         return "The current season is Winter"; }
 
     if (month == 4 || month == 5) {
@@ -18,7 +19,18 @@ function weather(month, day) {
 // task 2
 function isPerfectSquare(arg) {
     let root = Math.sqrt(arg)
-        if (Number.isInteger(root)) {
+        
+    if (Number.isInteger(root)) {
             return "Integer " + arg + " is Perfect Square"
         } else {
             return "Integer " + arg + " is NOT Perfect Square" } }
+
+// task 3
+function countDigits(str) {
+    let count = 0
+        
+    for (let i = 0; i < str.length; i++)
+        if (str.charAt(i) >= "0" && str.charAt(i) <= "9")
+            count++
+            
+    return count }
