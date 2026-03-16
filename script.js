@@ -16,6 +16,7 @@ function weather(month, day) {
 
     return "Unknown"; }
 
+
 // task 2
 function isPerfectSquare(arg) {
     let root = Math.sqrt(arg)
@@ -24,6 +25,7 @@ function isPerfectSquare(arg) {
             return "Integer " + arg + " is Perfect Square"
         } else {
             return "Integer " + arg + " is NOT Perfect Square" } }
+
 
 // task 3
 function countDigits(str) {
@@ -34,6 +36,7 @@ function countDigits(str) {
             count++
             
     return count }
+
 
 // task 4
 function stringCompressor(str) {
@@ -46,4 +49,14 @@ function stringCompressor(str) {
             else {
                 result += str.charAt(i) + count
                 count = 1 }
+            
             return result }
+
+
+// task 5
+function isPalindromeInt(arg) {
+    for (let i = 0; i < arg.length / 2; i++) 
+        if (arg.charAt(i) != arg.charAt(arg.length - 1 - i))
+            return arg + " is NOT Palindrome"
+        
+        return arg + " is Palindrome" }
