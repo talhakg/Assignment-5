@@ -34,3 +34,16 @@ function countDigits(str) {
             count++
             
     return count }
+
+// task 4
+function stringCompressor(str) {
+    let result = ""
+    let count = 1
+        
+    for (let i = 0; i < str.length; i++)
+            if (str.charAt(i) == str.charAt(i+1))
+                count++
+            else {
+                result += str.charAt(i) + count
+                count = 1 }
+            return result }
